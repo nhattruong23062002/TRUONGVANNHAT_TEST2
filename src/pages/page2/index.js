@@ -24,9 +24,6 @@ const Page2 = () => {
     fetchData();
   }, []);
   
-  console.log('users:',users);
-  console.log('gender:',gender);
-
   const handleFilter = () => {
     let filtered = users;
     if (gender) filtered = filtered.filter(user => user.gender == gender);
@@ -44,7 +41,6 @@ const Page2 = () => {
     setFilteredUsers(filtered);
   };
 
-  console.log(filteredUsers)
 
   return (
     <div className="container">

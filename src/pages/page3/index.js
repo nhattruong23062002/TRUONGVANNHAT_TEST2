@@ -18,7 +18,6 @@ const Page3 = () => {
     fetchUsers();
   }, []);
 
-  console.log('user',users)
   return (
     <div>
       <h1>Here Maps Example</h1>

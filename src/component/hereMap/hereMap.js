@@ -59,10 +59,6 @@ const HereMap = ({ users }) => {
       return;
     }
 
-    console.log("Dữ liệu users:", users);
-    console.log("mapInstance.current:", mapInstance.current);
-    console.log("uiInstance.current:", uiInstance.current);
-
     mapInstance.current.removeObjects(mapInstance.current.getObjects());
 
     users.forEach((user) => {
